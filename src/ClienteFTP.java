@@ -75,7 +75,8 @@ public class ClienteFTP {
                     String clave = sc.nextLine();
 
                     if(cliente.login(usuario,clave)){
-                        System.out.println("\nQue desea realizar:\n0.Salir\n1.Ver archivos del directorio\n2.Descargar un archivo\n3.Cargar un archivo");
+                        System.out.println("\nQue desea realizar:\n0.Salir\n1.Ver archivos del directorio" +
+                                           "\n2.Descargar un archivo\n3.Cargar un archivo");
                         int eleccion = sc.nextInt();
                         sc.nextLine();
 
