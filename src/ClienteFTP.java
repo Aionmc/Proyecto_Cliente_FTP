@@ -108,7 +108,7 @@ public class ClienteFTP {
 
                                     cliente.setFileType(FTPClient.BINARY_FILE_TYPE);
                                     try{
-                                        DataInputStream in = new DataInputStream(new FileInputStream(nombre));
+                                        BufferedInputStream in = new BufferedInputStream(new FileInputStream(nombre));
                                         cliente.storeFile(nombre,in);
                                     } catch (FileNotFoundException e) {
                                         System.out.println("El archivo no existe");
